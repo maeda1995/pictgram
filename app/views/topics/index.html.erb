@@ -22,11 +22,15 @@
               <%= image_tag 'icons/comment.png', class: 'topic-index-icon' %>
             <% end %>
             <p class="topic-text">
-            <%= topic.description %>
-            <% topic.comments each do |comment| %>
-            <%= comment.[] %>
-            <% end %>
+              <%= topic.description %>
             </p>
+            
+            <h2>コメント</h2>
+            <% topic.comments.each do |comment| %>
+              <p class="topic-text">
+                <%= comment.discription %>
+              </p>
+            <% end %>
           </div>
         </div>
       </div>

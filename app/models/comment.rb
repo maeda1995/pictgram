@@ -3,5 +3,5 @@ class Comment < ApplicationRecord
   belongs_to :topic
   
   
-  validates :text, presence: true
+  validates :discription, presence: true
 end

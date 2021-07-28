@@ -6,8 +6,8 @@
         <%= form_for @comment, url:comments_new_path do |f| %>
           
           <div class="form-group">
-            <%= f.label :text %>
-            <%= f.text_area :text, class: 'form-control' %>
+            <%= f.label :discription %>
+            <%= f.text_area :discription, class: 'form-control' %>
           </div>
           <%= f.hidden_field :topic_id, :value => @topic_id %>
           <% if logged_in? %>
